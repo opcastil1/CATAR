@@ -1,0 +1,99 @@
+<div class="pagedashboard page-dashboard" data-ng-controller="DashboardCtrl">
+   <div class="panelgrafico panel-default">
+      <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Presion tiempo real</strong></div>
+      <div class="panel-body" data-ng-controller="flotChartCtrl">
+         <div data-flot-chart-realtime
+            data-type="realtime"
+            style="width: 100%; height: 200px;"
+            ></div>
+      </div>
+   </div>
+   <div class="panelgrafico panel-default">
+      <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Temperatura tiempo real</strong></div>
+      <div class="panel-body" data-ng-controller="flotChartCtrl">
+         <div data-flot-chart-realtime1
+            data-type="realtime"
+            style="width: 100%; height: 200px;"
+            ></div>
+      </div>
+   </div>
+   <div class="page page-table">
+      <section class="paneltable panel-default table-dynamic">
+         <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Parametros en tiempo real</strong></div>
+         <table class="table table-bordered table-striped table-responsive"ng-controller="flotChartCtrl">
+            <tbody>
+               <tr>
+                  <td>Presion</td>
+                  <td id="p1"></td>
+                  <td>Presion Objetivo</td>
+                  <td id="p11"></td>
+               </tr>
+               <tr>
+                  <td>Temperatura</td>
+                  <td id="p2"></td>
+                  <td>Temperatura Objetivo</td>
+                  <td id="p22"> </td>
+               </tr>
+               <tr>
+                  <td>Velocidad Motor</td>
+                  <td id="p3"></td>
+                  <td>Parametro 3</td>
+                  <td id="p33">123</td>
+               </tr>
+            </tbody>
+         </table>
+      </section>
+      <section class="panelspinner panel-default" >
+         <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Control</strong>
+         </div>
+         <div class="panel-body" ng-mousemove=""  data-ng-controller="Notifyinicio" >
+            <div class="form-group">
+               <div class="row" >
+                  <div class="col-xs-4" ng-controller="InputPresion">
+                     <div class="input-group-control" data-ui-spinner >
+                        <input id="inputpresion" type="text" class="form-control" ng-model="putpresion"  >
+                     </div>
+                  </div>
+                  <div class="col-xs-1 collabels">
+                     <div class="labelpresion">Presion</div>
+                  </div>
+                  <div class="col-xs-4" >  
+                     <button id="iniciop" type="button" data-ng-click="startpresion()" class="btn btn-w-xs btn-gap-v btn-start" >Inicio</button>
+                  </div>
+                  <div class="col-xs-1" >  
+                     <button id="stopp" type="button" data-ng-click="stoppresion()" class="btn btn-w-xs btn-gap-v1 btn-stop"  >Detener</button>
+                  </div>
+               </div>
+               <div class="row" data-ng-controller="ProgressDemoCtrl1" >
+                  <progressbar class="progress-striped active" value="dynamic" type="{{type}}"></progressbar>
+                  <div class="col-xs-1 coltimer" >  
+                     <i class="glyphicon glyphicon-time"></i> <span style="margin-left: 5px" id="chronotime">0:00:00</span>
+                  </div>
+               </div>
+               <div class ="row">
+                  <div class="col-xs-4" ng-controller="InputTemperatura">
+                     <div class="input-group-control" data-ui-spinner>
+                        <input id="inputtemperatura" type="number" class="form-control" ng-model="puttemperatura">
+                     </div>
+                  </div>
+                  <div class="col-xs-1 collabels">
+                     <div class="labeltemperatura">Temperatura</div>
+                  </div>
+                  <div class="col-xs-4" >
+                     <button id="iniciot" type="button" class="btn btn-w-xs btn-gap-v btn-start"data-ng-click="starttemperatura()"  >Inicio</button>
+                  </div>
+                  <div class="col-xs-1" >  
+                     <button id="stopt" type="button" data-ng-click="stoptemperatura()" class="btn btn-w-xs btn-gap-v1 btn-stop"  >Detener</button>
+                  </div>
+               </div>
+               <div class="row" data-ng-controller="ProgressDemoCtrl2">
+                  <progressbar class="progress-striped active" value="dynamic" type="{{type}}"></progressbar>
+                  <div class="col-xs-1 coltimer" >  
+                     <i class="glyphicon glyphicon-time"></i><span style="margin-left: 5px" id="chronotime2"> 0:00:00</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </div>
+</div>

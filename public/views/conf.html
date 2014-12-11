@@ -1,0 +1,239 @@
+<div class="pageconf page-dashboard">
+    
+    <div class="panelconf panel-default" ng-controller= "Notifyconf">
+      <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Confuguración de parametros</strong></div>
+    <div class ="row conf ">
+        <div class="col-xs-4" ng-controller="UpdatePresionMaxima">
+            <div class="input-group-control" data-ui-spinner>
+                <input id="updatepresionmaxima" type="text" class="form-control" ng-model="updatepresionmaxima">
+            </div>
+        </div>
+        <div class="col-xs-1 collabelsconf">
+            <div class="labelconf">
+                Presion Máxima
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <button type="button" data-ng-click="updatepresionmaxima()" class="btn btn-w-xs btn-gap-v btn-info">Cambiar</button>
+        </div>
+    </div>
+
+    <div class ="row conf ">
+        <div class="col-xs-4" ng-controller="UpdatePresionMinima">
+            <div class="input-group-control" data-ui-spinner>
+                <input id="updatepresionminima" type="text" class="form-control" ng-model="updatepresionminima">
+            </div>
+        </div>
+        <div class="col-xs-1 collabelsconf">
+            <div class="labelconf">
+                Presion Mínima
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <button type="button" data-ng-click="updatepresionminima()" class="btn btn-w-xs btn-gap-v btn-info">Cambiar</button>
+        </div>
+    </div>
+     <div class ="row conf ">
+        <div class="col-xs-4" ng-controller="UpdateTemperaturaMaxima">
+            <div class="input-group-control" data-ui-spinner>
+                <input id="updatetemperaturamaxima" type="text" class="form-control" ng-model="updatetemperaturamaxima">
+            </div>
+        </div>
+        <div class="col-xs-1 collabelsconf">
+            <div class="labelconf">
+                Temp Máxima
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <button type="button" data-ng-click="updatetemperaturamaxima()" class="btn btn-w-xs btn-gap-v btn-info">Cambiar</button>
+        </div>
+    </div>
+      <div class ="row conf ">
+        <div class="col-xs-4" ng-controller="UpdateTemperaturaMinima">
+            <div class="input-group-control" data-ui-spinner>
+                <input id="updatetemperaturaminima" type="text" class="form-control" ng-model="updatetemperaturaminima">
+            </div>
+        </div>
+        <div class="col-xs-1 collabelsconf">
+            <div class="labelconf">
+                Temp Mínima 
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <button type="button" data-ng-click="updatetemperaturaminima()" class="btn btn-w-xs btn-gap-v btn-info">Cambiar</button>
+        </div>
+    </div>
+     <div class ="row conf ">
+        <div class="col-xs-4" ng-controller="UpdateVelocidadMaxima">
+            <div class="input-group-control" data-ui-spinner>
+                <input id="updatevelocidadmaxima" type="text" class="form-control" ng-model="updatevelocidadmaxima">
+            </div>
+        </div>
+        <div class="col-xs-1 collabelsconf">
+            <div class="labelconf">
+                Velocidad Max 
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <button type="button" data-ng-click="updatevelocidadmaxima()" class="btn btn-w-xs btn-gap-v btn-info">Cambiar</button>
+        </div>
+    </div>     
+    <div class ="row conf ">
+        <div class="col-xs-4" ng-controller="UpdateTiempoEjecucion">
+            <div class="input-group-control" data-ui-spinner>
+                <input id="updatetiempoejecucion" type="text" class="form-control" ng-model="updatetiempoejecucion">
+            </div>
+        </div>
+        <div class="col-xs-1 collabelsconf">
+            <div class="labelconf">
+                Tiempo Ejeuc 
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <button type="button" data-ng-click="updatetiempoejecucion()" class="btn btn-w-xs btn-gap-v btn-info">Cambiar</button>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="panelconf2 panel-default" ng-controller= "Notifyconf">
+      <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Configuración de PID</strong></div>
+    <div class ="row conf ">
+        <div class="col-xs-4" ng-controller="UpdatePPresion">
+            <div class="input-group-control" data-ui-spinner>
+                <input id="updateppresion" type="text" class="form-control" ng-model="updateppresion">
+            </div>
+        </div>
+        <div class="col-xs-1 collabelsconf">
+            <div class="labelconf">
+                Parametro P Pre
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <button type="button" data-ng-click="updateppresion()" class="btn btn-w-xs btn-gap-v btn-info">Cambiar</button>
+        </div>
+    </div>
+
+    <div class ="row conf ">
+        <div class="col-xs-4" ng-controller="UpdateIPresion">
+            <div class="input-group-control" data-ui-spinner>
+                <input id="updateipresion" type="text" class="form-control" ng-model="updateipresion">
+            </div>
+        </div>
+        <div class="col-xs-1 collabelsconf">
+            <div class="labelconf">
+                Parametro I Pre
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <button type="button" data-ng-click="updateipresion()" class="btn btn-w-xs btn-gap-v btn-info">Cambiar</button>
+        </div>
+    </div>
+     <div class ="row conf ">
+        <div class="col-xs-4" ng-controller="UpdateDPresion">
+            <div class="input-group-control" data-ui-spinner>
+                <input id="updatedpresion" type="text" class="form-control" ng-model="updatedpresion">
+            </div>
+        </div>
+        <div class="col-xs-1 collabelsconf">
+            <div class="labelconf">
+                Parametro D Pre
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <button type="button" data-ng-click="updatedpresion()" class="btn btn-w-xs btn-gap-v btn-info">Cambiar</button>
+        </div>
+    </div>
+     <div class ="row conf ">
+        <div class="col-xs-4" ng-controller="UpdatePTemperatura">
+            <div class="input-group-control" data-ui-spinner>
+                <input id="updateptemperatura" type="text" class="form-control" ng-model="updateptemperatura">
+            </div>
+        </div>
+        <div class="col-xs-1 collabelsconf">
+            <div class="labelconf">
+                Parametro P Temp
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <button type="button" data-ng-click="updateptemperatura()" class="btn btn-w-xs btn-gap-v btn-info">Cambiar</button>
+        </div>
+    </div>
+         <div class ="row conf ">
+        <div class="col-xs-4" ng-controller="UpdateITemperatura">
+            <div class="input-group-control" data-ui-spinner>
+                <input id="updateitemperatura" type="text" class="form-control" ng-model="updateitemperatura">
+            </div>
+        </div>
+        <div class="col-xs-1 collabelsconf">
+            <div class="labelconf">
+                Parametro I Tem 
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <button type="button" data-ng-click="updateitemperatura()" class="btn btn-w-xs btn-gap-v btn-info">Cambiar</button>
+        </div>
+    </div>
+         <div class ="row conf ">
+        <div class="col-xs-4" ng-controller="UpdateDTemperatura">
+            <div class="input-group-control" data-ui-spinner>
+                <input id="updatedtemperatura" type="text" class="form-control" ng-model="updatedtemperatura">
+            </div>
+        </div>
+        <div class="col-xs-1 collabelsconf">
+            <div class="labelconf">
+                Parametro D Tem
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <button type="button" data-ng-click="updatedtemperatura()" class="btn btn-w-xs btn-gap-v btn-info">Cambiar</button>
+        </div>
+    </div>
+
+    </div>
+
+  <div class="panelconf3 panel-default" >
+     <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span> Parametros del sistema</strong></div>
+         <table class="table table-bordered table-striped table-responsive"ng-controller="flotChartCtrl">
+            <tbody>
+               <tr>
+                  <td>Presión Máxima</td>
+                  <td id="pu1"><div></div> </td>
+                  <td>Parámetro P Presión</td>
+                  <td id="pu11"></td>
+               </tr>
+               <tr>
+                  <td>Presión Mínima</td>
+                  <td id="pu2"></td>
+                  <td>Parámetro I Presión</td>
+                  <td id="pu22"> </td>
+               </tr>
+               <tr>
+                  <td>Temperatura Máxima</td>
+                  <td id="pu3"></td>
+                  <td>Parámetro D Presión</td>
+                  <td id="pu33">123</td>
+               </tr>
+               <tr>
+                  <td>Temperatura Mínima</td>
+                  <td id="pu4"></td>
+                  <td>Parametro P Temperaturua</td>
+                  <td id="pu4">123</td>
+               </tr>
+               <tr>
+                  <td>Velocidad Máxima Motor</td>
+                  <td id="pu5"></td>
+                  <td>Parametro I Temperaturua</td>
+                  <td id="pu55">123</td>
+               </tr>
+               <tr>
+                  <td>Tiempo Ejecución Máximo</td>
+                  <td id="pu6"></td>
+                  <td>Parametro D Temperaturua</td>
+                  <td id="pu66">123</td>
+               </tr>
+            </tbody>
+         </table>
+
+    </div>
+</div>
